@@ -1,6 +1,7 @@
 # mcp-samples
 
 The client will:
+
 1. Connect to the weather server via stdio
 2. Initialize a session
 3. Load MCP tools
@@ -8,17 +9,23 @@ The client will:
 5. Process weather queries like "What's the weather in New York?"
 
 ## Note
+
 There appears to be a typo in the model name in `client.py`. It should be `"gpt-4"` instead of `"gpt-4o"`.
 
 ## Run
+
 ```bash
-make run
+python weather_server.py
+```
+
+```bash
+python client.py
 ```
 
 The weather server will always return "It's always sunny in New York" regardless of the input location.
 
 ```
-# output
+
 
 ➜  multiple_mcp_servers git:(master) ✗ python weather_server.py
 INFO:     Started server process [66790]
@@ -35,6 +42,7 @@ Processing request of type CallToolRequest
 ```
 
 ```
+# output
 ➜  multiple_mcp_servers git:(master) ✗ python client.py
 Processing request of type ListToolsRequest
 Processing request of type CallToolRequest
