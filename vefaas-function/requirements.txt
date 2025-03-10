@@ -1,0 +1,17 @@
+# Core dependencies
+langchain>=0.0.352
+langchain-openai>=0.0.5
+langgraph>=0.0.10
+langchain-mcp-adapters
+mcp
+
+# Pydantic with core dependencies
+pydantic>=2.5.2
+pydantic-core>=2.14.5
+
+# Utility packages
+anyio>=4.2.0
+httpx>=0.26.0
+httpx-sse>=0.4.0
+
+fastapi
